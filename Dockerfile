@@ -1,5 +1,9 @@
 FROM alpine
 
+LABEL org.opencontainers.image.source="https://github.com/0xERR0R/bitwarden-backup-docker" \
+      org.opencontainers.image.url="https://github.com/0xERR0R/bitwarden-backup-docker" \
+      org.opencontainers.image.title="Bitwarden backup"
+
 RUN apk add --update \
     sqlite \
     nodejs \
