@@ -32,7 +32,7 @@ BW_USER_2=xxx
 BW_PASSWORD_2=xxx
 ```
 
-Following `docker-compose.yml` starts bitwarden and bitwarden-backup. Backup file will be stored in a volume "backup" which is mounted via samba (NAS). Backup will run only on startup. You should trigger the execution per cron `docker-compose run backup` or by using of external tools like [ofelia](https://github.com/mcuadros/ofelia). You can also use this image as a Kubernetes CronJob.
+Following `docker-compose.yml` starts bitwarden and bitwarden-backup. Backup file will be stored in a volume "backup" which is mounted via samba (NAS). Backup will run only on startup. You should trigger the execution per cron `docker-compose run backup` or by using of external tools like [crony](https://github.com/0xERR0R/crony). You can also use this image as a Kubernetes CronJob.
 
 ```yaml
 version: '2.1'
